@@ -72,27 +72,66 @@ const Pricing = () => {
           {/* Cost Estimate */}
           <div className="bg-white border-2 border-gray-200 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">お見積り例</h3>
-            
-            <div className="space-y-4 mb-6">
-              <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                <span className="text-gray-700">プラン利用料（24ヶ月）</span>
-                <span className="font-semibold">3,000,000円</span>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-6">
+              {/* プラン利用料 */}
+              <div>
+                <div className="text-center font-bold text-gray-900 mb-3">プラン利用料</div>
+                <div className="overflow-hidden rounded-lg border-2 border-gray-300">
+                  <table className="w-full text-sm lg:text-base">
+                    <thead>
+                      <tr className="text-white">
+                        <th className="bg-cyan-500/90 px-4 py-3 text-left w-1/4">個数</th>
+                        <th className="bg-cyan-500/90 px-4 py-3 text-left w-1/4">単価</th>
+                        <th className="bg-cyan-500/90 px-4 py-3 text-left w-1/2">金額</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-t border-gray-300">
+                        <td className="px-4 py-3">24か月</td>
+                        <td className="px-4 py-3">¥125,000</td>
+                        <td className="px-4 py-3 font-semibold">¥3,000,000</td>
+                      </tr>
+                      <tr className="border-t border-gray-300">
+                        <td className="px-4 py-3 bg-gray-50 font-medium" colSpan={2}>消費税</td>
+                        <td className="px-4 py-3 bg-gray-50">¥300,000</td>
+                      </tr>
+                      <tr className="border-t-2 border-gray-400">
+                        <td className="px-4 py-3 font-bold" colSpan={2}>合計金額</td>
+                        <td className="px-4 py-3 font-extrabold text-gray-900">¥3,300,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                <span className="text-gray-700">消費税（10%）</span>
-                <span className="font-semibold">300,000円</span>
-              </div>
-              <div className="flex justify-between items-center py-2 border-b-2 border-gray-200">
-                <span className="text-lg font-semibold text-gray-900">合計金額</span>
-                <span className="text-xl font-bold text-gray-900">3,300,000円</span>
-              </div>
-              <div className="flex justify-between items-center py-2 bg-green-50 px-4 rounded-lg">
-                <span className="text-green-800 font-medium">IT導入補助金（1/2以内）</span>
-                <span className="text-xl font-bold text-green-600">-1,500,000円</span>
-              </div>
-              <div className="flex justify-between items-center py-3 bg-sky-100 px-4 rounded-lg">
-                <span className="text-lg font-bold text-sky-800">実質ご負担額</span>
-                <span className="text-2xl font-bold text-sky-600">1,800,000円</span>
+
+              {/* IT導入補助金 */}
+              <div>
+                <div className="text-center font-bold text-gray-900 mb-3">IT導入補助金</div>
+                <div className="overflow-hidden rounded-lg border-2 border-gray-300">
+                  <table className="w-full text-sm lg:text-base">
+                    <thead>
+                      <tr className="text-white">
+                        <th className="bg-sky-700 px-4 py-3 text-left w-1/2">項目</th>
+                        <th className="bg-sky-700 px-4 py-3 text-left w-1/6">個数</th>
+                        <th className="bg-sky-700 px-4 py-3 text-left w-1/6">単価</th>
+                        <th className="bg-sky-700 px-4 py-3 text-left w-1/6">補助額</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-t border-gray-300">
+                        <td className="px-4 py-3">IT導入補助金（1/2以内）</td>
+                        <td className="px-4 py-3">1</td>
+                        <td className="px-4 py-3">¥1,500,000</td>
+                        <td className="px-4 py-3 font-semibold">¥1,500,000</td>
+                      </tr>
+                      <tr className="border-t-2 border-gray-400">
+                        <td className="px-4 py-3 bg-gray-50 font-bold" colSpan={3}>受給合計</td>
+                        <td className="px-4 py-3 bg-gray-50 font-extrabold text-gray-900">¥1,500,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
 
