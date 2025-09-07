@@ -27,7 +27,7 @@ const Hero = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 予約統合システム
                 <br />
-                <span className="text-sky-600">ブッキングゲートウェイ</span>
+                <span className="text-sky-600">BookingGateway</span>
               </h1>
 
               {/* Subheading */}
@@ -45,12 +45,6 @@ const Hero = () => {
                 >
                   無料相談（担当営業に連絡）
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </button>
-                <button
-                  className="px-8 py-4 border-2 border-sky-600 text-sky-600 rounded-lg font-semibold hover:bg-sky-50 transition-colors"
-                  data-analytics="hero-cta-download"
-                >
-                  資料ダウンロード
                 </button>
               </div>
             </div>
