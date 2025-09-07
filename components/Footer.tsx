@@ -73,13 +73,10 @@ const Footer = () => {
               
               <div>
                 <a
-                  href="https://bookinggateway.jp/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/terms"
                   className="inline-flex items-center text-gray-400 hover:text-sky-400 transition-colors text-sm"
                 >
-                  利用規約・プライバシーポリシー
-                  <ExternalLink className="w-3 h-3 ml-1" />
+                  利用規約
                 </a>
               </div>
             </div>

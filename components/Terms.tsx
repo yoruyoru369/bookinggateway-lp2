@@ -27,9 +27,7 @@ const Terms = () => {
           </p>
 
           <a
-            href="https://bookinggateway.jp/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/terms"
             className="inline-flex items-center px-8 py-4 bg-sky-600 text-white rounded-lg font-semibold hover:bg-sky-700 transition-colors group shadow-lg"
             data-analytics="terms-cta"
           >
@@ -40,9 +38,7 @@ const Terms = () => {
           <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
             <div className="flex items-center justify-center space-x-2 text-blue-800">
               <CheckCircle className="w-5 h-5" />
-              <span className="text-sm font-medium">
-                新しいタブで利用規約ページが開きます
-              </span>
+              <span className="text-sm font-medium">内部ページ（/terms）で表示します</span>
             </div>
           </div>
         </div>
