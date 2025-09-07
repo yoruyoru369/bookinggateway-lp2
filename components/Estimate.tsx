@@ -73,18 +73,6 @@ const Estimate = () => {
               </div>
             </div>
           </div>
-
-          {/* CTA */}
-          <div className="text-center mt-8 pt-6 border-t border-gray-200">
-            <a
-              href="#contact"
-              className="inline-flex items-center px-8 py-3 bg-sky-600 text-white rounded-lg font-semibold hover:bg-sky-700 transition-colors"
-              data-analytics="estimate-cta"
-            >
-              詳細なお見積りを依頼
-              <CheckCircle className="w-4 h-4 ml-2" />
-            </a>
-          </div>
         </div>
 
         {/* 補足バナー */}

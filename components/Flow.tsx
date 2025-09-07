@@ -91,18 +91,6 @@ const Flow = () => {
             ))}
           </div>
         </div>
-
-        {/* CTA */}
-        <div className="text-center mt-12">
-          <a
-            href="#contact"
-            className="inline-flex items-center px-8 py-3 bg-sky-600 text-white rounded-lg font-semibold hover:bg-sky-700 transition-colors"
-            data-analytics="flow-cta"
-          >
-            導入を開始する
-            <Play className="w-4 h-4 ml-2" />
-          </a>
-        </div>
       </div>
     </section>
   );

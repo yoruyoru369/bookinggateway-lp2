@@ -34,8 +34,8 @@ export default function Home() {
         <SetupCoop />
         <Company />
         <Terms />
-        <CTAContact />
         <FAQ />
+        <CTAContact />
       </main>
       <Footer />
     </>

@@ -34,13 +34,6 @@ const Terms = () => {
             利用規約を見る
             <ExternalLink className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </a>
-
-          <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <div className="flex items-center justify-center space-x-2 text-blue-800">
-              <CheckCircle className="w-5 h-5" />
-              <span className="text-sm font-medium">内部ページ（/terms）で表示します</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>

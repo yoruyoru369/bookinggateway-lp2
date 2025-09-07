@@ -42,18 +42,6 @@ const Problem = () => {
             </div>
           ))}
         </div>
-
-        {/* Mini CTA */}
-        <div className="text-center mt-12">
-          <a
-            href="#benefits"
-            className="inline-flex items-center px-6 py-3 bg-sky-600 text-white rounded-lg font-medium hover:bg-sky-700 transition-colors"
-            data-analytics="problem-cta"
-          >
-            解決策を見る
-            <Phone className="w-4 h-4 ml-2" />
-          </a>
-        </div>
       </div>
     </section>
   );
