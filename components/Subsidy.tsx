@@ -57,34 +57,7 @@ const Subsidy = () => {
           </div>
         </div>
 
-        {/* Subsidy amounts table */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-          <div className="bg-gradient-to-r from-sky-600 to-blue-600 px-6 py-4">
-            <h3 className="text-xl font-semibold text-white text-center">
-              年商別補助金額早見表
-            </h3>
-          </div>
-          <div className="p-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {subsidyAmounts.map((item, index) => (
-                <div key={index} className="text-center p-6 bg-gradient-to-br from-gray-50 to-white border rounded-lg hover:shadow-md transition-shadow">
-                  <div className="flex justify-center mb-4">
-                    {item.icon}
-                  </div>
-                  <div className="text-lg font-semibold text-gray-900 mb-2">
-                    年商 {item.revenue}
-                  </div>
-                  <div className="text-3xl font-bold text-sky-600">
-                    {item.amount}
-                  </div>
-                  <div className="text-sm text-gray-500 mt-2">
-                    補助金上限
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        {/* Subsidy amounts table (hidden as requested) */}
 
         {/* Note */}
         <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">

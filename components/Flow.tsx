@@ -1,128 +1,92 @@
-import { ArrowRight, MessageSquare, FileText, Settings, Play, CheckCircle } from 'lucide-react';
+import { Play, ClipboardCheck, Users, Laptop, Search, Gift } from 'lucide-react';
 
 const Flow = () => {
-  const steps = [
-    {
-      icon: <FileText className="w-8 h-8 text-sky-600" />,
-      title: "申込",
-      description: "お問い合わせフォームから申込"
-    },
-    {
-      icon: <MessageSquare className="w-8 h-8 text-green-600" />,
-      title: "LINE案内",
-      description: "専用LINEでサポート開始"
-    },
-    {
-      icon: <CheckCircle className="w-8 h-8 text-blue-600" />,
-      title: "IT導入補助金\n申請サポート",
-      description: "申請手続きをサポート"
-    },
-    {
-      icon: <Settings className="w-8 h-8 text-purple-600" />,
-      title: "システムアカウント準備",
-      description: "専用アカウントを準備"
-    },
-    {
-      icon: <Play className="w-8 h-8 text-orange-600" />,
-      title: "システム初期設定",
-      description: "予約サービスとの連携設定"
-    },
-    {
-      icon: <CheckCircle className="w-8 h-8 text-green-600" />,
-      title: "運用開始",
-      description: "BookingGateway運用開始"
-    }
+  const stepTitles = [
+    '申込',
+    'LINE案内',
+    'IT導入補助金\n申請サポート',
+    'システム\nアカウント準備',
+    'システム\n初期設定',
+    '運用開始',
   ];
 
-  const phases = [
-    {
-      title: "各種準備期間",
-      color: "bg-sky-100 text-sky-800",
-      width: "w-1/4"
-    },
-    {
-      title: "IT導入補助金申請期間", 
-      color: "bg-green-100 text-green-800",
-      width: "w-2/4"
-    },
-    {
-      title: "システム利用開始",
-      color: "bg-orange-100 text-orange-800", 
-      width: "w-1/4"
-    }
+  const iconRow = [
+    <ClipboardCheck key="i1" className="w-16 h-16 text-cyan-500" />,
+    <Users key="i2" className="w-16 h-16 text-cyan-500" />,
+    <Laptop key="i3" className="w-16 h-16 text-cyan-500" />,
+    <Search key="i4" className="w-16 h-16 text-cyan-500" />,
+    <Laptop key="i5" className="w-16 h-16 text-cyan-500" />,
+    <Gift key="i6" className="w-16 h-16 text-cyan-500" />,
   ];
 
   return (
     <section id="flow" className="py-16 lg:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            導入フローについて
+        <div className="text-center mb-12">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
+            担当営業にご連絡ください。
           </h2>
-          <div className="w-24 h-1 bg-sky-600 mx-auto"></div>
+          <p className="text-lg text-gray-600">
+            LINEを利用して、システムアカウントの開設案内やIT導入補助金の申請サポートを行います。
+          </p>
+          <div className="w-24 h-1 bg-sky-600 mx-auto mt-6"></div>
         </div>
 
-        {/* Steps */}
-        <div className="relative mb-16">
-          {/* Desktop Flow */}
-          <div className="hidden lg:flex items-center justify-between">
-            {steps.map((step, index) => (
-              <div key={index} className="flex items-center">
-                <div className="text-center">
-                  <div className="bg-white p-4 rounded-full shadow-lg border-2 border-gray-200 mb-4">
-                    {step.icon}
-                  </div>
-                  <h3 className="font-semibold text-gray-900 text-sm mb-2 whitespace-pre-line">
-                    {step.title}
-                  </h3>
-                  <p className="text-xs text-gray-600 max-w-24">
-                    {step.description}
-                  </p>
-                </div>
-                {index < steps.length - 1 && (
-                  <ArrowRight className="w-6 h-6 text-gray-400 mx-4 flex-shrink-0" />
+        {/* Chevron Steps */}
+        <div className="relative mb-12">
+          {/* Desktop chevron bar */}
+          <div className="hidden lg:flex w-full overflow-x-hidden">
+            {stepTitles.map((title, idx) => (
+              <div key={idx} className={`relative flex-1 bg-cyan-400 text-white font-bold text-center py-5 px-6 flex items-center justify-center ${idx === 0 ? 'rounded-l-xl' : ''} ${idx === stepTitles.length - 1 ? 'rounded-r-xl' : ''}`}>
+                {/* left divider (slanted) */}
+                {idx !== 0 && (
+                  <div className="absolute left-0 top-0 h-full w-0 border-t-[30px] border-b-[30px] border-r-[18px] border-t-transparent border-b-transparent border-r-white/70" />
+                )}
+                <span className="whitespace-pre-line leading-tight">{title}</span>
+                {/* arrow head: reverse on last */}
+                {idx !== stepTitles.length - 1 ? (
+                  <div className="absolute top-0 -right-4 h-full w-0 border-t-[30px] border-b-[30px] border-l-[16px] border-l-cyan-400 border-t-transparent border-b-transparent" />
+                ) : (
+                  <div className="absolute top-0 -right-4 h-full w-0 border-t-[30px] border-b-[30px] border-r-[16px] border-r-cyan-400 border-t-transparent border-b-transparent" />
                 )}
               </div>
             ))}
           </div>
 
-          {/* Mobile Flow */}
-          <div className="lg:hidden space-y-6">
-            {steps.map((step, index) => (
-              <div key={index} className="flex items-start space-x-4">
-                <div className="bg-white p-3 rounded-full shadow-lg border-2 border-gray-200 flex-shrink-0">
-                  {step.icon}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    {step.description}
-                  </p>
-                </div>
+          {/* Mobile stacked steps */}
+          <div className="lg:hidden space-y-3">
+            {stepTitles.map((title, idx) => (
+              <div key={idx} className="relative bg-cyan-400 text-white font-semibold rounded-lg py-3 pl-4 pr-10 flex items-center justify-center text-center">
+                <span className="whitespace-pre-line leading-tight">{title}</span>
+                {idx !== stepTitles.length - 1 ? (
+                  <div className="absolute top-0 -right-3 h-full w-0 border-t-[24px] border-b-[24px] border-l-[12px] border-l-cyan-400 border-t-transparent border-b-transparent" />
+                ) : (
+                  <div className="absolute top-0 -right-3 h-full w-0 border-t-[24px] border-b-[24px] border-r-[12px] border-r-cyan-400 border-t-transparent border-b-transparent" />
+                )}
               </div>
             ))}
           </div>
         </div>
 
-        {/* Timeline Phases */}
-        <div className="bg-gray-100 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-6 text-center">
-            期間イメージ
-          </h3>
-          <div className="flex rounded-lg overflow-hidden">
-            {phases.map((phase, index) => (
-              <div
-                key={index}
-                className={`${phase.width} ${phase.color} py-4 px-3 text-center relative`}
-              >
-                <div className="text-sm font-medium">
-                  {phase.title}
-                </div>
-                {index < phases.length - 1 && (
-                  <div className="absolute top-1/2 right-0 transform -translate-y-1/2 w-0 h-0 border-l-8 border-l-current border-t-4 border-t-transparent border-b-4 border-b-transparent"></div>
-                )}
+        {/* Icon Row */}
+        <div className="hidden lg:grid grid-cols-6 gap-6 justify-items-center mb-10">
+          {iconRow.map((IconEl, idx) => (
+            <div key={idx}>{IconEl}</div>
+          ))}
+        </div>
+
+        {/* Timeline Arrows */}
+        <div className="mt-4">
+          <div className="flex justify-between text-blue-800 text-sm font-semibold mb-3">
+            <span>各種準備期間</span>
+            <span>IT導入補助金申請期間</span>
+            <span>システム利用開始</span>
+          </div>
+          <div className="space-y-3">
+            {[0,1].map((i) => (
+              <div key={i} className="relative h-3 bg-blue-700 rounded-full">
+                <span className="absolute -left-2 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[6px] border-y-transparent border-r-[8px] border-r-blue-700"></span>
+                <span className="absolute -right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[6px] border-y-transparent border-l-[8px] border-l-blue-700"></span>
               </div>
             ))}
           </div>
