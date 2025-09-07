@@ -16,7 +16,36 @@ const Estimate = () => {
             {/* プラン利用料 */}
             <div>
               <div className="text-center font-bold text-gray-900 mb-3">プラン利用料</div>
-              <div className="overflow-hidden rounded-lg border-2 border-gray-300">
+              {/* Mobile (cards) */}
+              <div className="block md:hidden">
+                <div className="rounded-lg border-2 border-gray-300 divide-y">
+                  <div className="p-4">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-gray-600">個数</span>
+                      <span className="font-medium">24か月</span>
+                    </div>
+                    <div className="mt-2 flex items-center justify-between text-sm">
+                      <span className="text-gray-600">単価</span>
+                      <span className="font-medium whitespace-nowrap">¥125,000</span>
+                    </div>
+                    <div className="mt-2 flex items-center justify-between text-sm">
+                      <span className="text-gray-600">金額</span>
+                      <span className="font-semibold whitespace-nowrap">¥3,000,000</span>
+                    </div>
+                  </div>
+                  <div className="bg-gray-50 p-4 flex items-center justify-between text-sm">
+                    <span className="text-gray-700 font-medium">消費税</span>
+                    <span className="whitespace-nowrap">¥300,000</span>
+                  </div>
+                  <div className="p-4 flex items-center justify-between">
+                    <span className="font-bold">合計金額</span>
+                    <span className="font-extrabold text-gray-900 whitespace-nowrap">¥3,300,000</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Desktop/Tablet (table) */}
+              <div className="hidden md:block overflow-hidden rounded-lg border-2 border-gray-300">
                 <table className="w-full text-sm lg:text-base">
                   <thead>
                     <tr className="text-white">
@@ -47,7 +76,36 @@ const Estimate = () => {
             {/* IT導入補助金 */}
             <div>
               <div className="text-center font-bold text-gray-900 mb-3">IT導入補助金</div>
-              <div className="overflow-hidden rounded-lg border-2 border-gray-300">
+              {/* Mobile (cards) */}
+              <div className="block md:hidden">
+                <div className="rounded-lg border-2 border-gray-300 divide-y">
+                  <div className="p-4 space-y-2">
+                    <div className="flex items-start justify-between text-sm">
+                      <span className="text-gray-600">項目</span>
+                      <span className="font-medium text-right">IT導入補助金（1/2以内）</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-gray-600">個数</span>
+                      <span className="font-medium">1</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-gray-600">単価</span>
+                      <span className="font-medium whitespace-nowrap">¥1,500,000</span>
+                    </div>
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-gray-600">補助額</span>
+                      <span className="font-semibold whitespace-nowrap">¥1,500,000</span>
+                    </div>
+                  </div>
+                  <div className="bg-gray-50 p-4 flex items-center justify-between">
+                    <span className="font-bold">受給合計</span>
+                    <span className="font-extrabold text-gray-900 whitespace-nowrap">¥1,500,000</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Desktop/Tablet (table) */}
+              <div className="hidden md:block overflow-hidden rounded-lg border-2 border-gray-300">
                 <table className="w-full text-sm lg:text-base">
                   <thead>
                     <tr className="text-white">
