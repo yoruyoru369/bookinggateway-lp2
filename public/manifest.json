@@ -1,0 +1,16 @@
+{
+  "name": "BookingGateway - 予約統合システム",
+  "short_name": "BookingGateway",
+  "description": "複数の予約サービスを一元管理する予約統合システム",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0EA5E9",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
