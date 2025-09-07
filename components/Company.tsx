@@ -58,31 +58,7 @@ const Company = () => {
             ))}
           </div>
 
-          {/* Additional Info */}
-          <div className="mt-8 pt-8 border-t border-gray-200">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-3 flex items-center">
-                  <Building className="w-5 h-5 text-sky-600 mr-2" />
-                  事業ミッション
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  飲食店の予約管理業務を効率化し、より良いサービス提供を支援することで、
-                  飲食業界の発展に貢献します。
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-3 flex items-center">
-                  <Briefcase className="w-5 h-5 text-green-600 mr-2" />
-                  サービス特徴
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  複数の予約サービスを統合管理する独自のシステムにより、
-                  業務効率化と顧客満足度向上を同時に実現します。
-                </p>
-              </div>
-            </div>
-          </div>
+          
         </div>
 
         {/* CTA */}

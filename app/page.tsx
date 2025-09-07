@@ -9,7 +9,6 @@ import Subsidy from '@/components/Subsidy';
 import Pricing from '@/components/Pricing';
 import Estimate from '@/components/Estimate';
 import Flow from '@/components/Flow';
-import SetupCoop from '@/components/SetupCoop';
 import Company from '@/components/Company';
 import Terms from '@/components/Terms';
 import CTAContact from '@/components/CTAContact';
@@ -31,7 +30,6 @@ export default function Home() {
         <Pricing />
         <Estimate />
         <Flow />
-        <SetupCoop />
         <Company />
         <Terms />
         <FAQ />
