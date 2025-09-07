@@ -100,13 +100,6 @@ const Integrations = () => {
             ))}
           </div>
         </div>
-
-        {/* Note */}
-        <div className="text-center mt-8">
-          <p className="text-sm text-gray-600">
-            ※商標ロゴは使用せず、サービス名のみを表示しています
-          </p>
-        </div>
       </div>
 
       <style jsx>{`
