@@ -85,10 +85,6 @@ const Estimate = () => {
                       <span className="font-medium text-right">IT導入補助金（1/2以内）</span>
                     </div>
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-gray-600">個数</span>
-                      <span className="font-medium">1</span>
-                    </div>
-                    <div className="flex items-center justify-between text-sm">
                       <span className="text-gray-600">単価</span>
                       <span className="font-medium whitespace-nowrap">¥1,500,000</span>
                     </div>
@@ -109,8 +105,7 @@ const Estimate = () => {
                 <table className="w-full text-sm lg:text-base">
                   <thead>
                     <tr className="text-white">
-                      <th className="bg-sky-700 px-4 py-3 text-left w-1/2">項目</th>
-                      <th className="bg-sky-700 px-4 py-3 text-left w-1/6">個数</th>
+                      <th className="bg-sky-700 px-4 py-3 text-left w-2/3">項目</th>
                       <th className="bg-sky-700 px-4 py-3 text-left w-1/6">単価</th>
                       <th className="bg-sky-700 px-4 py-3 text-left w-1/6">補助額</th>
                     </tr>
@@ -118,12 +113,11 @@ const Estimate = () => {
                   <tbody>
                     <tr className="border-t border-gray-300">
                       <td className="px-4 py-3">IT導入補助金（1/2以内）</td>
-                      <td className="px-4 py-3">1</td>
                       <td className="px-4 py-3">¥1,500,000</td>
                       <td className="px-4 py-3 font-semibold">¥1,500,000</td>
                     </tr>
                     <tr className="border-t-2 border-gray-400">
-                      <td className="px-4 py-3 bg-gray-50 font-bold" colSpan={3}>受給合計</td>
+                      <td className="px-4 py-3 bg-gray-50 font-bold" colSpan={2}>受給合計</td>
                       <td className="px-4 py-3 bg-gray-50 font-extrabold text-gray-900">¥1,500,000</td>
                     </tr>
                   </tbody>
