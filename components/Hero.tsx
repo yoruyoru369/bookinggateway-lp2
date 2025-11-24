@@ -28,12 +28,12 @@ const Hero = () => {
         <div className="py-16 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div className="text-center lg:text-left">
+            <div className="text-center lg:text-left lg:min-w-0 lg:pr-8">
               {/* Heading */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 予約統合システム
                 <br />
-                <span className="text-sky-600">ブッキングゲートウェイ</span>
+                <span className="text-sky-600 whitespace-nowrap">ブッキングゲートウェイ</span>
                 <span className="sr-only">（BookingGateway）</span>
               </h1>
 

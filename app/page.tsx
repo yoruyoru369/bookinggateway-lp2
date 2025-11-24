@@ -4,6 +4,7 @@ import Problem from '@/components/Problem';
 import Benefits from '@/components/Benefits';
 import Integrations from '@/components/Integrations';
 import Features from '@/components/Features';
+import Subsidy from '@/components/Subsidy';
 import Pricing from '@/components/Pricing';
 import Flow from '@/components/Flow';
 import Company from '@/components/Company';
@@ -22,6 +23,7 @@ export default function Home() {
         <Benefits />
         <Integrations />
         <Features />
+        <Subsidy />
         <Pricing />
         <Flow />
         <Company />
