@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, Calendar, Settings, RefreshCw, Smartphone, MapPin, FolderSync } from 'lucide-react';
+import { ChevronDown, ChevronUp, Calendar, Settings, RefreshCw, FolderSync } from 'lucide-react';
 
 const Features = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -21,16 +21,6 @@ const Features = () => {
       icon: <RefreshCw className="w-6 h-6 text-orange-600" />,
       title: "各予約サービスへの満席設定反映機能",
       description: "満席時に自動で受付終了設定を行います。ダブルブッキングを防ぎ、適切な予約管理を実現します。"
-    },
-    {
-      icon: <Smartphone className="w-6 h-6 text-purple-600" />,
-      title: "スタペイ「リアルタイム予約」連携機能",
-      description: "予約収集・満席反映・予約変更反映を自動化します。スタペイとのシームレスな連携により、より効率的な予約管理が可能になります。"
-    },
-    {
-      icon: <MapPin className="w-6 h-6 text-red-600" />,
-      title: "スタペイ「リアルタイム予約」への自動座席割当て機能",
-      description: "空席予約に自動割当てを行います。効率的な座席管理により、店舗運営をサポートします。"
     },
     {
       icon: <FolderSync className="w-6 h-6 text-blue-600" />,

@@ -4,8 +4,6 @@ import Problem from '@/components/Problem';
 import Benefits from '@/components/Benefits';
 import Integrations from '@/components/Integrations';
 import Features from '@/components/Features';
-import ReleaseTimeline from '@/components/ReleaseTimeline';
-import Subsidy from '@/components/Subsidy';
 import Pricing from '@/components/Pricing';
 import Estimate from '@/components/Estimate';
 import Flow from '@/components/Flow';
@@ -25,8 +23,6 @@ export default function Home() {
         <Benefits />
         <Integrations />
         <Features />
-        <ReleaseTimeline />
-        <Subsidy />
         <Pricing />
         <Estimate />
         <Flow />

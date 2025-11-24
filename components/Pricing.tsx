@@ -19,9 +19,42 @@ const Pricing = () => {
           <div className="w-24 h-1 bg-sky-600 mx-auto"></div>
         </div>
 
-        <div className="grid grid-cols-1 gap-12 items-start">
-          {/* Pricing Card */}
-          <div className="relative">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          {/* Standard Plan */}
+          <div className="relative lg:col-span-2">
+            <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 relative overflow-hidden">
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">スタンダードプラン</h3>
+                <div className="flex items-baseline">
+                  <span className="text-4xl font-bold text-gray-700">5,000</span>
+                  <span className="text-lg text-gray-600 ml-1">円/月</span>
+                </div>
+                <p className="text-sm text-gray-500 mt-1">（税別／1店舗ごと）</p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">利用店舗数：1店舗ごと</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">初期費用：なし</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">月額利用料：5,000円（税別）</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">基本的な予約管理機能</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Premium Plan */}
+          <div className="relative lg:col-span-1">
             <div className="bg-gradient-to-br from-sky-50 to-blue-100 rounded-2xl p-8 border-2 border-sky-200 relative overflow-hidden">
               {/* Premium Badge */}
               <div className="absolute top-0 right-0 bg-sky-600 text-white px-4 py-2 text-sm font-semibold rounded-bl-lg">
@@ -68,8 +101,6 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>
