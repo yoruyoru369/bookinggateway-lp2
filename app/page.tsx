@@ -5,7 +5,6 @@ import Benefits from '@/components/Benefits';
 import Integrations from '@/components/Integrations';
 import Features from '@/components/Features';
 import Pricing from '@/components/Pricing';
-import Estimate from '@/components/Estimate';
 import Flow from '@/components/Flow';
 import Company from '@/components/Company';
 import Terms from '@/components/Terms';
@@ -24,7 +23,6 @@ export default function Home() {
         <Integrations />
         <Features />
         <Pricing />
-        <Estimate />
         <Flow />
         <Company />
         <Terms />
